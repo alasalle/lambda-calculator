@@ -3,7 +3,8 @@
 
 .container {
   background-color: $calc-base-color;
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   border-radius: 15px;
   border: 2px solid grey;
   padding-bottom: 25px;
