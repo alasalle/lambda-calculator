@@ -1,0 +1,8 @@
+@mixin button($height, $width, $border-radius, $background-color) {
+  height: $height;
+  width: $width;
+  border-radius: $border-radius;
+  color: white;
+  background-color: $background-color;
+  box-shadow: 1px 1px $display-screen-color;
+}

@@ -1,0 +1,88 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+  background-color: $calc-base-color;
+  width: 550px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding-bottom: 25px;
+
+  .App {
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container {
+    margin: 25px 0 0 25px;
+  }
+
+  .button {
+    border: none;
+    outline:none;
+  }
+
+  .display {
+    margin-top: 25px;
+    @include button(100px, 450px, 50px, $display-screen-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 8%;
+    font-size: 5.0rem;
+  }
+
+  .specsAndOps {
+    display: flex;
+    margin-top: 25px;
+
+    .specsAndNumbers {
+      display: flex;
+      flex-direction: column;
+
+      .specials {
+        display: flex;
+    
+        .special {
+          @include button(100px, 100px, 50%, $specials-color);
+          font-size: 1.8rem;
+          box-shadow: 2px 3px $display-screen-color;
+          margin-right: 20px;
+        }
+      }
+
+      .number {
+        @include button(100px, 100px, 50%, $numbers-color);
+        font-size: 1.8rem;
+        box-shadow: 2px 3px $display-screen-color;
+        margin-right: 20px;
+        margin-top: 10px;
+      }
+
+      .zero {
+        @include button(100px, 220px, 50px, $numbers-color);
+        font-size: 1.8rem;
+        box-shadow: 2px 3px $display-screen-color;
+        margin-right: 20px;
+        margin-top: 10px;
+      }
+    }
+  
+    .operators {
+      display: flex;
+      flex-direction: column;
+  
+      .operator {
+        @include button(100px, 100px, 50%, $operators-color);
+        font-size: 1.8rem;
+        box-shadow: 2px 3px $display-screen-color;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  
+
+}
